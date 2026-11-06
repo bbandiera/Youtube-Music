@@ -1,4 +1,4 @@
-# YouTube Music (não oficial)
+# YouTube Music
 
 App de desktop para Windows que abre o YouTube Music em uma janela própria, feito com Electron.
 
@@ -29,12 +29,7 @@ npm run dist
 
 Os arquivos ficam na pasta `dist/`.
 
-## Ícone
-
-Coloque um arquivo `assets/icon.ico` (256x256) para o ícone do app, da bandeja e do instalador.
-
 ## Observações
 
-- Projeto não oficial, sem vínculo com o YouTube ou o Google.
-- Se o login do Google for bloqueado, tente entrar pelo navegador e voltar ao app, ou me avise para ajustarmos.
+- Provavelmente tera que deixar o Win em modo desenvovedor.
 - Para anúncios, letras ou Discord Rich Presence, dá para estender o `main.js`.
