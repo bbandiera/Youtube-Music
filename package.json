@@ -1,0 +1,35 @@
+{
+  "name": "ytmusic-desktop",
+  "productName": "YouTube Music",
+  "version": "1.0.0",
+  "description": "Aplicativo de desktop não oficial para o YouTube Music no Windows",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "dist": "electron-builder --win nsis portable"
+  },
+  "devDependencies": {
+    "electron": "^33.0.0",
+    "electron-builder": "^25.0.0"
+  },
+  "build": {
+    "appId": "com.youtubemusic.desktop",
+    "productName": "YouTube Music",
+    "files": [
+      "main.js",
+      "package.json",
+      "assets/**/*"
+    ],
+    "win": {
+      "target": [
+        "nsis",
+        "portable"
+      ],
+      "icon": "assets/icon.ico"
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true
+    }
+  }
+}
